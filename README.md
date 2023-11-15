@@ -11,7 +11,7 @@ Predict an insurance expenses for new customer based on some attributes and info
 
 ## Demo
 
-![DemoGIF]('Images/demo.gif')
+![DemoGIF](Images/demo.gif)
 ...
 
 ## Technology used
