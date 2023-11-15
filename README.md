@@ -29,4 +29,4 @@ Predict an insurance expenses for new customer based on some attributes and info
     ...
 
 # Running Test
-``` python app.py ```
+``` {python app.py} ```
