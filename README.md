@@ -29,4 +29,4 @@ Predict an insurance expenses for new customer based on some attributes and info
     ...
 
 # Running Test
-<code>Use `code` in your Markdown file.</code>
+``` python app.py ```
