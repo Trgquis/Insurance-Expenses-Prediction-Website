@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Insurance Expenses Prediction Tool</title>
+    </head>
+
+    <body>
+        <div style="color: black" class="container">
+            <form action="{{ url_for('predict')}}" method="post">
+                <h2 class="container-heading">
+                    <span class="heading_font"
+                        >Dự đoán chi phí bảo hiểm cho khách hàng mới</span
+                    >
+                </h2>
+
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                <!-- Result -->
+                <div class="results">
+                    <h2>Chi phí dự đoán của bạn là:</h2>
+                    <h2 style="color: red">{{prediction_text}}</h2>
+                </div>
+            </form>
+        </div>
+        <div>
+            <br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+            <p class="footer-description">©2023 Nhóm 06</p>
+        </div>
+
+        <style>
+
+            /* Background Image */
+            body
+            {
+            background-image:url("https://www.acko.com/wp-content/uploads/2020/01/cashless-health-insurance.jpg.webp");
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            }
+
+            /* Color */
+            body{
+            	font-family: Arial, Helvetica,sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            	height: 100%;
+            	display: flex;
+            	flex-direction: column;
+            }
+
+
+            /* Heading Font */
+            .container-heading{
+                margin-top: 50px;
+            }
+
+            .heading_font{
+                color: #black;
+            	font-family: 'Arial', cursive;
+            	font-size: 35px;
+            	font-weight: normal;
+                margin-top: 50px
+            }
+
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </style>
+    </body>
+</html>
